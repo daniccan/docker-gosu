@@ -7,7 +7,7 @@ Linux based Docker images with [gosu](https://github.com/tianon/gosu) support to
 * Import the docker-gosu image as the base image in your Dockerfile.
 
 ```
-FROM ubuntu-gosu:latest
+FROM daniccan/ubuntu-gosu:latest
 
 ....
 ....
