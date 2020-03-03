@@ -1,0 +1,108 @@
+name: Deploy Ubuntu Images to DockerHub
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Ubuntu.Dockerfile'
+      - 'entrypoint.sh'
+
+jobs:
+  ubuntu-latest-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:latest to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=latest
+        tags: latest
+
+  ubuntu-18.04-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:18.04 to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=18.04
+        tags: 18.04
+
+  ubuntu-bionic-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:bionic to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=bionic
+        tags: bionic
+
+  ubuntu-16.04-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:16.04 to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=16.04
+        tags: 16.04
+
+  ubuntu-xenial-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:xenial to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=xenial
+        tags: xenial
+      
+  ubuntu-14.04-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:14.04 to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=14.04
+        tags: 14.04
+
+  ubuntu-trusty-push:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish Ubuntu:trusty to Registry
+      uses: elgohr/Publish-Docker-Github-Action@2.9
+      with:
+        name: daniccan/ubuntu-gosu
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        dockerfile: Ubuntu.Dockerfile
+        buildargs: OS_VERSION=trusty
+        tags: trusty
