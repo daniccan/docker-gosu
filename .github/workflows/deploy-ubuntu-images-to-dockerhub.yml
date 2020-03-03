@@ -7,6 +7,7 @@ on:
     paths:
       - 'Ubuntu.Dockerfile'
       - 'entrypoint.sh'
+      - '**/deploy-ubuntu-images-to-dockerhub.yml'
 
 jobs:
   ubuntu-latest-push:
