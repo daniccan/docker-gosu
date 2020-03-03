@@ -23,7 +23,7 @@ jobs:
         buildargs: OS_VERSION=latest
         tags: latest
 
-  ubuntu-18.04-push:
+  ubuntu-18_04-push:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -51,7 +51,7 @@ jobs:
         buildargs: OS_VERSION=bionic
         tags: bionic
 
-  ubuntu-16.04-push:
+  ubuntu-16_04-push:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -79,7 +79,7 @@ jobs:
         buildargs: OS_VERSION=xenial
         tags: xenial
       
-  ubuntu-14.04-push:
+  ubuntu-14_04-push:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
