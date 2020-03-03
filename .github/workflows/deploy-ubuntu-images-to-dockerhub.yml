@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:latest to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -29,7 +29,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:18.04 to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -43,7 +43,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:bionic to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -57,7 +57,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:16.04 to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -71,7 +71,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:xenial to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -85,7 +85,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:14.04 to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -99,7 +99,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish Ubuntu:trusty to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.9
+      uses: elgohr/Publish-Docker-Github-Action@2.12
       with:
         name: daniccan/ubuntu-gosu
         username: ${{ secrets.DOCKER_USERNAME }}
