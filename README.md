@@ -7,7 +7,7 @@ Linux based Docker images with [gosu](https://github.com/tianon/gosu) support to
 * Import the docker-gosu image as the base image in your Dockerfile.
 
 ```
-FROM daniccan/ubuntu-gosu:latest
+FROM daniccan/ubuntu-gosu:18.04
 
 ....
 ....
@@ -27,9 +27,10 @@ docker run -it -e LOCAL_USER_ID=`id -u $USER` your-image
 
 ### Supported Linux Distros
 
-| Linux Distro         | Version(s)                                              |
-|----------------------|---------------------------------------------------------|
-| Ubuntu               | latest, 18.04 (bionic), 16.04 (xenial), 14.04 (trusty)  |
+| Linux Distro         | Version(s)                                      | Docker Repo                                                           |
+|----------------------|-------------------------------------------------|-----------------------------------------------------------------------|
+| Ubuntu               | 18.04 (bionic), 16.04 (xenial), 14.04 (trusty)  | [daniccan/ubuntu-gosu](https://hub.docker.com/r/daniccan/ubuntu-gosu) |
+| CentOS               | 6, 7, 8                                         | [daniccan/centos-gosu](https://hub.docker.com/r/daniccan/centos-gosu) |
 
 ### Issues
 

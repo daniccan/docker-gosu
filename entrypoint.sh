@@ -15,4 +15,4 @@ fi
 chown -R $USER_ID:$USER_ID /home/$USERNAME
 
 # Execute the process as the given user
-exec /usr/local/bin/gosu ubuntu "$@"
+exec /usr/local/bin/gosu $USERNAME "$@"
