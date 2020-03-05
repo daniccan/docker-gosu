@@ -27,10 +27,10 @@ docker run -it -e LOCAL_USER_ID=`id -u $USER` your-image
 
 ### Supported Linux Distros
 
-| Linux Distro         | Version(s)                                      | Docker Repo                                                           |
-|----------------------|-------------------------------------------------|-----------------------------------------------------------------------|
-| Ubuntu               | 18.04 (bionic), 16.04 (xenial), 14.04 (trusty)  | [daniccan/ubuntu-gosu](https://hub.docker.com/r/daniccan/ubuntu-gosu) |
-| CentOS               | 6, 7, 8                                         | [daniccan/centos-gosu](https://hub.docker.com/r/daniccan/centos-gosu) |
+| Linux Distro         | Version(s)                                              | Docker Repo                                                           |
+|----------------------|---------------------------------------------------------|-----------------------------------------------------------------------|
+| Ubuntu               | latest, 18.04 (bionic), 16.04 (xenial), 14.04 (trusty)  | [daniccan/ubuntu-gosu](https://hub.docker.com/r/daniccan/ubuntu-gosu) |
+| CentOS               | 6, 7, 8                                                 | [daniccan/centos-gosu](https://hub.docker.com/r/daniccan/centos-gosu) |
 
 ### Issues
 
