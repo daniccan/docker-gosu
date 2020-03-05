@@ -10,20 +10,6 @@ on:
       - '**/deploy-ubuntu-images-to-dockerhub.yml'
 
 jobs:
-  ubuntu-latest-push:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Publish Ubuntu:latest to Registry
-      uses: elgohr/Publish-Docker-Github-Action@2.12
-      with:
-        name: daniccan/ubuntu-gosu
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        dockerfile: Ubuntu.Dockerfile
-        buildargs: OS_VERSION=latest
-        tags: latest
-
   ubuntu-18_04-push:
     runs-on: ubuntu-latest
     steps:
